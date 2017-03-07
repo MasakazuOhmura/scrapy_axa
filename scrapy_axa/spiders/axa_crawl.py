@@ -1,6 +1,6 @@
 # coding: utf-8
 
-from tutorial.items import Headline
+from scrapy_axa.items import Headline
 from scrapy.spider import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 

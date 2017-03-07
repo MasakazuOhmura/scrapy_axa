@@ -7,7 +7,7 @@ from scrapy.selector import Selector
 
 import scrapy
 from scrapy import Spider
-from tutorial.items import AxaItem
+from scrapy_axa.items import AxaItem
 
 
 class AxaSpider(Spider):

@@ -2,7 +2,7 @@
 import scrapy
 from pytz import timezone
 from datetime import datetime as dt
-from tutorial.items import GunosyItem
+from scrapy_axa.items import GunosyItem
 
 
 class GunosySpider(scrapy.Spider):

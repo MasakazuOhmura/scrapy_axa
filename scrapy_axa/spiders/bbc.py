@@ -5,7 +5,7 @@ from datetime import datetime
 from scrapy.spiders import SitemapSpider
 from scrapy.selector import Selector
 
-from tutorial.items import NewsItem
+from scrapy_axa.items import NewsItem
 
 
 class BBCSpider(SitemapSpider):
