@@ -1,11 +1,8 @@
-# -*- coding: utf-8 -*-
-import scrapy
-from pytz import timezone
-from datetime import datetime as dt
+from scrapy import Spider
 from scrapy_axa.items import GunosyItem
 
 
-class GunosySpider(scrapy.Spider):
+class GunosySpider(Spider):
     name = "gunosy"
     allowed_domains = ["gunosy.com"]
     start_urls = (
@@ -18,12 +15,6 @@ class GunosySpider(scrapy.Spider):
         'https://gunosy.com/categories/7',  # IT・科学
         'https://gunosy.com/categories/8',  # グルメ
     )
-
-    # For output path
-    # ここで動的に定義できる
-    now = dt.now(timezone('Asia/Tokyo'))
-    date = now.strftime('%Y-%m-%d')
-    jst_time = now.strftime('%Y-%m-%dT%H-%M-%S')
 
     def parse(self, response):
         for sel in response.css("div.list_content"):
