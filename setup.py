@@ -1,4 +1,5 @@
 # Automatically created by: shub deploy
+# https://app.scrapinghub.com/p/165180/jobs
 
 from setuptools import setup, find_packages
 
